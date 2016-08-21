@@ -1,0 +1,18 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Condensed:400,700';
+
+body{font-family:'Open Sans',sans-serif;font-size:100%;}
+/*
+
+*******     target ÷ context = result     *******
+
+So, if the reset put the font on the body at 100%, then, the 100% equates 16 pixels. If the h1 should be (target of) 24px, then do this:
+ 24 ÷ 16 = 1.5
+to get the font size in ems. 
+Use 1.5 em for the h1.
+
+*/
+h1{font-family:'Roboto Condensed',sans-serif;font-weight:normal;font-size:2.25em; /* 36px/16px */ }
+h2{font-family:'Roboto Condensed',sans-serif;font-weight:normal;font-size:1.75em; /* 28px/16px */ }
+h3{font-family:'Roboto Condensed',sans-serif;}
+h4{font-family:'Roboto Condensed',sans-serif;}
+

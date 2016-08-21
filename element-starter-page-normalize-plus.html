@@ -3,26 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Element Starter Page</title>
+<title>Element Starter Page with normalize.css</title>
 <!-- I would put a font right here -->
-<link rel="stylesheet" type="text/css" media="screen" href="css/starter-page-01.css"><!-- reference for media=screen, Creating a Responsive Web Design, Chris Converse, lynda.com -->
 
+<!-- See difference from this page to the element-starter-page.html file that does not include it. Look at spacing, margin-y type things.  -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/element-starter-page-normalize-plus.css">
 <!-- what about the shiv? 
 
 The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
 
-Manual installation
-
+Manual installation -s
 Download and extract the latest zip package from this repositiory and copy the two files dist/html5shiv.js and dist/html5shiv-printshiv.js into your project. Then include one of them into your <head> as above. 
-
 but it's on google, see below, so...
 
 -->
-
-<!--James Williamson says: "After the title tag, add the HTML5 shiv script link. It just tells IE to create these elements. It's very short. You can copy this and host it yourself. This is just for less than IE 9, so it doesn't make sense to have others load it." 
-So this shiv probably needs to move up above the css.
--->
-
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,14 +48,15 @@ Usage Instructions
  -->
 <script src="js/respond.min.js"></script>
 </head>
+
 <body>
 <!-- This page is meant to have as many typical page elements as possible. It can be used to test CSS variations, frameworks, etc. -->
 <h1>Heading Level 1 (could say what framework it is for here)</h1>
+
+<p>** This page starts off with normalize.css as a base. I'm thinking what i want to do is add a second style sheet for some things to test. And then swap in other stylesheets. Will probably abandon the page without normalize once this one seems 'proven'. **</p>
+
 <p>Paragraph. Add greeking.</p>
-
-<p>** All this page's CSS has for starters is a font family. **</p>
-
-<p>Put some CSS up top, for heavens sake. Then try some other CSS. </p>
+<p>Put some CSS up top, for heavens sake. Then try some other CSS.</p>
 
 <h2>Heading Level 2</h2>
 <p>Paragraph following level 2 heading. How is the spacing? What is done with CSS as far as margin collapse?</p>
