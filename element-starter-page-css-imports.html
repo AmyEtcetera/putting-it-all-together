@@ -4,17 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Element Starter Page with normalize.css</title>
-<!-- I would put a font right here -->
+<!-- Import fonts and all other CSS files to one master style sheet - in future it can be named for the layout style used for the page - unlike this test. Look at YAML, others for difference between base styles and typography styles. -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/element-starter-page-css-imports.css">
 
-<!-- See difference from this page to the element-starter-page.html file that does not include it. Look at spacing, margin-y type things.  -->
-<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
 <!-- what about the shiv? 
 
-The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
-
-Manual installation -s
-Download and extract the latest zip package from this repositiory and copy the two files dist/html5shiv.js and dist/html5shiv-printshiv.js into your project. Then include one of them into your <head> as above. 
-but it's on google, see below, so...
+The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x. It's on google, see below...
 
 -->
 
@@ -49,14 +44,22 @@ Usage Instructions
 </head>
 
 <body>
-<!-- This page is meant to have as many typical page elements as possible. It can be used to test CSS variations, frameworks, etc. -->
-<h1>Heading Level 1 (could say what framework it is for here)</h1>
+<header id="header" role="banner">
+<!-- This page is meant to have as many typical page elements as possible. It can be used to test CSS variations, frameworks, etc.
 
-<p>** This page starts off with normalize.css as a base. I'm thinking what I want to do is add a second style sheet for some things to test. And then swap in other stylesheets. Will probably abandon the page without normalize once this one seems 'proven'. **</p>
+This version includes HTML5 sectioning elements -->
+<h1>Heading Level 1 (could say what framework it is for here, but we're veering away from that a bit at this point)</h1>
 
+<p>** This page includes normalize.css as a base. With this page we move to one main stylesheet - in this document it is element-starter-page-imports.css - to import fonts and all other style sheets. Using YAML as a reference to start. 
+Also, HTML5 sectioning elements will be added. **</p>
+</header>
+
+<main id="main" role="main">
 <p>Paragraph. Add greeking.</p>
 <p>Put some CSS up top, for heavens sake. Then try some other CSS.</p>
 
+<section>
+<p>This section contains examples of headings 1 - 4</p>
 <h2>Heading Level 2</h2>
 <p>Paragraph following level 2 heading. How is the spacing? What is done with CSS as far as margin collapse?</p>
 
@@ -65,6 +68,7 @@ Usage Instructions
 
 <h4>Heading Level 4</h4>
 <p>Paragraph. Add greeking.</p>
+</section>
 
 <p>Lists - unordered, ordered, nested, with styles removed, with bullets, inline...</p>
 <ul>
@@ -97,5 +101,8 @@ Usage Instructions
 <p>Show/hide</p>
 
 <p>html5 stuff: header, nav, section, article, aside, footer ...</p>
+
+</main>
+<footer id="footer"></footer>
 </body>
 </html>

@@ -1,0 +1,31 @@
+@media all {
+
+body{font-family:'Open Sans', Arial, Helvetica, sans-serif;font-size:100%;}
+/*
+
+------------ target ÷ context = result ---------
+
+EX: If the reset put the font on the body at 100%, then, the 100% equates 16 pixels. 
+
+If the h1 should be (target of) 24px, then calculate:
+    
+	24 ÷ 16 = 1.5
+	[24=target  16=context  1.5 resulting ems]
+	
+to get the font size in ems. 
+
+Use 1.5 em for the h1.
+
+
+*/
+/* --------------  We need line heights. --------------- */
+
+h1,h2,h3,h4,h5{font-family:'Roboto Condensed', Arial, Helvetica, sans-serif;font-weight:normal;}
+
+h1{font-size:2.25em; /* 36px/16px */ color:#000; }
+h2{font-size:1.75em; /* 28px/16px */ color:#000; }
+h3{}
+h4{}
+
+p{line-height:1.6em;}	
+}
