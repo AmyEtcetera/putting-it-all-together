@@ -13,10 +13,10 @@ First, a basic responsive, accessible HTML5 testing page, with as many elements 
 - collapsing menu, starting out with Erick Arbe simple-toggle
 - HTML5 shiv
 - respond.js
-- CSS reset, maybe someone else's, maybe my own
+- CSS reset is normalize.css, possibly modified at some point
 - image polyfill?
 - maybe modernizr
-- jquery tests
+- jQuery tests
 - video tests
 - some ARIA
 
